@@ -1,0 +1,8 @@
+<h1><%= @album.name %></h1>
+
+<h3>Artist: <%=@album.artist%></h3>
+<h3>Running Length: <%=@album.track_no%> tracks</h3>
+<h3>Running Time: <%=@album.runtime / 60%> minutes</h3>
+<p>Summary: <%=@album.summary%> </p>
+<img src="<%=@album.album_art_url%>">
+ 
