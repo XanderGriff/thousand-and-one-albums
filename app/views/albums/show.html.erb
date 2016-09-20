@@ -1,25 +1,26 @@
-
-<div class='header'>
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= render 'shared/header' %>
+    </head>
     
-    <p class='center'> < To List</p>
-</div>
-
-
-<div class='menu'></div>
-
-<div class='info'>
-    <img src="<%=@album.album_art_url%>">
-    <h3>Artist: <%=@album.artist%></h3>
-    <h3>Running Length: <%=@album.track_no%> tracks</h3>
-    <h3>Running Time: <%=@album.runtime / 60%> minutes</h3>
-</div>
-
-<div class='main'>
-    <h1><%= @album.name %></h1>
-    <p><%=@album.summary%> </p>
-    
-    
-</div>
-
-
- 
+    <body>
+        <div class='header'>
+            <p class='center'> < To List</p>
+        </div>
+        
+        <div class='menu'></div>
+        
+        <div class='info'>
+            <img src="<%=@album.album_art_url%>">
+            <h3>Artist: <%=@album.artist%></h3>
+            <h3>Running Length: <%=@album.track_no%> tracks</h3>
+            <h3>Running Time: <%=@album.runtime / 60%> minutes</h3>
+        </div>
+        
+        <div class='main'>
+            <h1><%= @album.name %></h1>
+            <p><%=@album.summary%> </p>
+        </div>
+    </body>
+</html>
