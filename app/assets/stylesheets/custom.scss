@@ -1,0 +1,108 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family:'suisse';
+  src:font-url('Suisse-R.woff2') format('woff2');
+  
+}
+
+h1, h2, h3, p {
+  font-family: 'suisse';
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+#navback {
+  float: left;
+  /*margin-right: 1em;*/
+  font-size: 1.7em;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  /*padding-top: 9px;*/
+  font-weight: bold;
+}
+
+#navback:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.section { 
+  height: 100vh; 
+
+}
+
+img {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+
+/*Album View */
+
+.header {
+    border: 1px solid red;
+    padding: 15px;
+    height: 10vh; 
+}
+.menu {
+    width: 10%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    height: 90vh; 
+}
+
+.info {
+    width: 30%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    height: 90vh; 
+}
+
+.main {
+    width: 60%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    height: 90vh; 
+    padding: 15px 10%;
+}

@@ -1,15 +1,32 @@
-<h1>Listing articles</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= render 'shared/header' %>
+    </head>
+  
+    <body>
+        <div class='section'>
+            <h1>1000</h1>
+            <h1>&ONE</h1>
+        </div>
+         
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Text</th>
+            </tr>
  
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @albums.each do |album| %>
-    <tr>
-      <td><%= album.id %></td>
-      <td><%= album.name %></td>
-    </tr>
-  <% end %>
-</table>
+            <% @albums.each do |album| %>
+                <tr>
+                    <td><%= album.id %></td>
+                    <td><%= album.name %></td>
+                </tr>
+            <% end %>
+        </table>
+  </body>
+  
+</html>
+
+
+
+

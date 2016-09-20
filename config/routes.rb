@@ -7,12 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   
-  root 'static_pages#home'
-  
-  get 'static_pages/list'
-  get 'static_pages/album'
-  
-  
+  root 'albums#index'
   get 'albums/:id', to: 'albums#show'
   get 'albums', to: 'albums#index'
 
