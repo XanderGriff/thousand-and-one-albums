@@ -3,7 +3,7 @@ class AlbumsController < ApplicationController
     end
     
     def create
-        
+        render plain: "hello"
     end
     
     def show
