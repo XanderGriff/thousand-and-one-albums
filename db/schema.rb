@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(version: 20160919185009) do
     t.string   "name"
     t.string   "artist"
     t.string   "album_art_url"
+    t.string   "album_art_url_small"
+    t.string   "album_art_url_large"
     t.integer  "track_no"
     t.integer  "runtime"
     t.text     "summary"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.integer  "year"
   end
 

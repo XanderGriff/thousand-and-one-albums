@@ -4,25 +4,36 @@
         <%= render 'shared/header' %>
     </head>
   
-    <body>
-        <div class='section'>
-            <h1>1000</h1>
-            <h1>&ONE</h1>
+    <body class='fillcolor'>
+        <div class="home">
+            
+            <div class='sectionmiddle'></div>
+            <div class='sectionmiddle'></div>
+            <div class='sectionheader text-center'>
+                <div class='wrap'>
+                    <h1> 1000 </h1>
+                    <h1> &ONE </h1>
+                </div>
+            </div>
+            <div class='sectionmiddle'></div>
+            <div class='sectiondown'></div>
         </div>
-         
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Text</th>
-            </tr>
- 
-            <% @albums.each do |album| %>
-                <tr>
-                    <td><%= album.id %></td>
-                    <td><%= album.name %></td>
-                </tr>
-            <% end %>
-        </table>
+        
+        <div class='menu'></div>
+        <div class='menu'></div>
+        
+        <div class='table-space'>
+            <table class='table'>
+     
+                <% @albums.each do |album| %>
+                    <tr>
+                        <td><img class="img-responsive img-thumbnail" src=<%= album.album_art_url%> </td>
+                        <td><h3><%= album.artist%></h3></td>
+                        <td><h3><%= album.name%></h3></td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
   </body>
   
 </html>
