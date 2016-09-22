@@ -12,7 +12,7 @@
     
     puts "hello seeds"
 
-    csv_file_loc = Rails.root.join('app/assets/fonts', 'test.csv')
+    csv_file_loc = Rails.root.join('app/assets/fonts', 'test.txt')
     
     csv_file = File.open(csv_file_loc, "r")
     
