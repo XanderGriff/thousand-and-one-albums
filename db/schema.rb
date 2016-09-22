@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160919185009) do
   create_table "albums", force: :cascade do |t|
     t.string   "name"
     t.string   "artist"
-    t.string   "album_art_url"
+    t.string   "album_art_url_med"
     t.string   "album_art_url_small"
     t.string   "album_art_url_large"
     t.integer  "track_no"

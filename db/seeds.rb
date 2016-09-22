@@ -34,7 +34,7 @@
             a.name = albuminfo['album']['name']
             a.artist = albuminfo['album']['artist']
             a.album_art_url_small = albuminfo['album']['image'][1]['#text']
-            a.album_art_url = a.album_art_url_small = albuminfo['album']['image'][2]['#text']
+            a.album_art_url_med = a.album_art_url_small = albuminfo['album']['image'][2]['#text']
             a.album_art_url_large = a.album_art_url_small = albuminfo['album']['image'][3]['#text']
             a.track_no = albuminfo['album']['tracks'].length
             #a.runtime = albuminfo['album']
