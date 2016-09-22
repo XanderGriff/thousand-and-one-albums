@@ -24,14 +24,14 @@ h1, h2, h3, p, tr, td {
     left: 0;
 }
 
-/*-- ELIMINATE SCROLLING --*/
+/*-- ELIMINATE HORIZ SCROLLING --*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 
-/*-- BACKGROUND --*/
+/*-- LANDING PAGE --*/
 #home {
     background-color: #10DDC2;
     h1 {
@@ -53,3 +53,6 @@ html, body {
 #triangle {
     height: 10vh;
 }
+
+/*-- LIST --*/
+
