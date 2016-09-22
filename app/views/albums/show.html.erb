@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <% content_for :title, "1000&ONE" %>
         <%= render 'shared/header' %>
     </head>
     
     <body>
+        
+       
         <div class='header'>
             <p class='center'> < To List</p>
         </div>
@@ -22,5 +25,10 @@
             <h1><%= @album.name %></h1>
             <p><%=@album.summary%> </p>
         </div>
+        
+        <svg class="svg-angle" viewBox="0 0 50 50" preserveAspectRatio="none">
+            <polygon points="50,0 0,50 50,50" fill="purple"></polygon>
+        </svg>
+        
     </body>
 </html>

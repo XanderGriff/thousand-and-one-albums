@@ -1,14 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.center {
-  text-align: center;
-}
 
-.center h1 {
-  margin-bottom: 10px;
-}
-
+/*-- FONT --*/
 
 @font-face {
   font-family:'suisse';
@@ -20,131 +14,42 @@ h1, h2, h3, p, tr, td {
   font-family: 'suisse';
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+/*-- SVG --*/
+
+.svg-angle {
+    font-size: 100px;
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
+/*-- ELIMINATE SCROLLING --*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-#navback {
-  float: left;
-  /*margin-right: 1em;*/
-  font-size: 1.7em;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  /*padding-top: 9px;*/
-  font-weight: bold;
-}
-
-#navback:hover {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.sectionheader { 
-  height: 20vh; 
-  position: relative              /* 1 */
-  h1 {
-      margin: 0;
-      position: absolute;               /* 2 */
-      top: 50%;                         /* 3 */
-     transform: translate(0, -50%)  /* 4 */
-  }
-}
-
-.sectionmiddle {
-  height: 20vh;
-}
-
-.sectiondown {
-  height: 20vh;
-  background-color: #cc6699;
-  text-align: center;
-}
-
-img {
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+/*-- BACKGROUND --*/
+#home {
+    background-color: #10DDC2;
+    h1 {
+      text-align:center;
+    }
     
 }
 
-img:hover {
-    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
+#logo-box {
+  height: 90vh;
 }
 
-/*Album View */
-
-.header {
-    border: 1px solid red;
-    padding: 15px;
-    height: 10vh; 
+#logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.home {
-  border: 1px solid red;
-  height: 100vh; 
-  background-color: #f1f1f1;
-}
-
-.menu {
-    width: 10%;
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-}
-
-.info {
-    width: 30%;
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-}
-
-.table-space {
-    width: 70%;
-    float: left;
-    border: 1px solid red;
-}
-
-.main {
-    width: 60%;
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-    padding: 15px 10%;
-}
-
-th, td {
-    border-bottom: 1px solid #ddd;
-}
-
-.table>tbody>tr:nth-child(odd)>td,
-tr.found{
-    background-color:#cc6699;
-    border-color: #cc6699;
-}
-
-.fillcolor {
-  background-color: #cc6699;
+#triangle {
+    height: 10vh;
 }
