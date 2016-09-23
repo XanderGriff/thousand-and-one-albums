@@ -94,6 +94,17 @@ html, body {
   font-family: suisse;
 }
 
+.my-tbl {
+  border-top: double #10DDC2;
+  td, tr {
+    border-bottom: #10DDC2;
+  }
+}
+
+.table td{
+    border-bottom: #10DDC2 solid 1px !important;
+}
+
 /*-- LIST --*/
 
 #list {
