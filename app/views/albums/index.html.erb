@@ -5,31 +5,31 @@
         <%= render 'shared/header' %>
     </head>
   
-    <body>
-        <div class="row" id="home">
-            <div class="col-md-12" id="logo-box">
-                <div id="logo">
-                    <h1> 1000 </h1>
-                    <h1> &ONE </h1>
-                </div>
-            </div>
-            <div class="col-md-12" id="triangle">
+    <body id="mainbody">
+        <div class="row" id="backing"></div>   
+        
+        <div id="home">
+            <div class="row" id="triangle">
                 <svg class="svg-angle" viewBox="0 0 50 50" preserveAspectRatio="none">
-                    <polygon points="50,0 0,50 50,50" fill="#F5F5F5"></polygon>
+                    <polygon points="50,0 0,50 50,50" fill="#f2f2f2"></polygon>
                 </svg>
             </div>
-        </div>   
-        
-        <div class="row" id="list">
-            <table class='table'>
-                <% @albums.each do |album| %>
-                    <tr>
-                        <td><img class="img-responsive img-thumbnail" src=<%= album.album_art_url_med%> </td>
-                        <td><h3><%= album.artist%></h3></td>
-                        <td><h3><%= album.name%></h3></td>
-                    </tr>
-                <% end %>
-            </table>
+            
+            <div class="row" id="random">
+                <button type="button" class="btn btn-default my-btn">Show Random</button>
+            </div>
+            
+            <div class="row" id="list">
+                <table class='table my-tbl'>
+                    <% @albums.each do |album| %>
+                        <tr>
+                            <td><img class="img-responsive img-thumbnail" src=<%= album.album_art_url_med%> </td>
+                            <td><h3><%= album.artist%></h3></td>
+                            <td><h3><%= album.name%></h3></td>
+                        </tr>
+                    <% end %>
+                </table>
+            </div>
         </div>
     </body>
   

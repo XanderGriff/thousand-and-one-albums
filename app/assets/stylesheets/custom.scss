@@ -10,49 +10,100 @@
   
 }
 
-h1, h2, h3, p, tr, td {
+h1, h2, h3, h4, p, tr, td {
   font-family: 'suisse';
+  color: #f24040;
 }
 
 /*-- SVG --*/
 
 .svg-angle {
-    font-size: 100px;
-    bottom: 100%;
-    height: 100%;
-    width: 100%;
-    left: 0;
+  font-size: 100px;
+  bottom: 100%;
+  height: 100%;
+  width: 100%;
+  left: 0;
 }
 
 /*-- ELIMINATE HORIZ SCROLLING --*/
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 
 
 /*-- LANDING PAGE --*/
-#home {
-    background-color: #10DDC2;
-    h1 {
-      text-align:center;
-    }
-    
-}
 
-#logo-box {
+
+#backing {
+  background-image: url(logo.svg);
+  background-color: #10DDC2;
   height: 90vh;
+
+  /*parallax*/
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
-#logo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+#art {
+  background-color: #10DDC2;
+  height: 50vh;
+
+  /*parallax*/
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+#mainbody {
+  background-color: #f2f2f2;
 }
 
 #triangle {
-    height: 10vh;
+  height: 10vh;
+  background-color:#10DDC2;
+}
+
+/*-- RANDOMIZE --*/
+
+#random {
+  text-align: center;
+  margin: 3%;
+}
+
+.my-btn {
+  color: #f24040;
+  font-family: suisse;
 }
 
 /*-- LIST --*/
 
+#list {
+  margin-right:5%;
+  margin-left:5%;
+}
+
+@media (max-width: 978px) {
+  #list {
+    margin:0;
+  }
+}
+
+#summary {
+  margin-right:10%;
+  margin-left:10%;
+}
+
+@media (max-width: 978px) {
+  #summary {
+    margin:0;
+  }
+}
+
+#title {
+  height: 10vh;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
