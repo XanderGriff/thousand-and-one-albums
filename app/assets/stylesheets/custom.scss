@@ -37,7 +37,7 @@ html, body {
 
 
 #backing {
-  background-image: url(app/assets/images/logo.svg);
+  background-image: url(image_path('logo.svg'));
   background-color: #10DDC2;
   height: 90vh;
 
@@ -104,6 +104,4 @@ html, body {
 
 #title {
   height: 10vh;
-  margin-top: 4%;
-  margin-bottom: 2%;
 }
