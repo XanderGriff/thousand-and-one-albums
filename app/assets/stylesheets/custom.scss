@@ -49,10 +49,17 @@ html, body {
   background-size: cover;
 }
 
+/*-- FIX FOR MOBILE --*/
 @media (max-width: 978px) {
   #backing {
-    background-color: #10DDC2;
-    height: 90vh;
+    h1 {
+      display: block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    height: 20vh !important;
+    background-image: none !important;
   }
 }
 
