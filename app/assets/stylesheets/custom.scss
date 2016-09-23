@@ -40,11 +40,20 @@ html, body {
   background-image: url(image_path('logo.svg'));
   background-color: #10DDC2;
   height: 90vh;
-
+  h1 {
+    display: none;
+  }
   /*parallax*/
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+@media (max-width: 978px) {
+  #backing {
+    background-color: #10DDC2;
+    height: 90vh;
+  }
 }
 
 #art {
